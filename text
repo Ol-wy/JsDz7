@@ -1,0 +1,25 @@
+Реализовать иерархию класса Транспорт 
+ 
+будет абстрактный класс транспорт  
+Будет метод startEngine 
+ 
+После Car 
+И у этого Car переопределить метод startEngine 
+ 
+И можете добавить ещё  воздушный транспорт или водный транспорт
+
+class Helicopter extends Transport{
+    constructor(type, engine, numberOfSeats, startedOperationYear, numberOfEngines, takeOffWeight, maximumFlightRange, cruiseSpeed, fuelConsumption, manufacturer){
+    super(type, engine, numberOfSeats);
+    this.startedOperationYear = startedOperationYear;
+    this.numberOfEngines = numberOfEngines;
+    this.takeoffWeight = takeOffWeight;
+    this.maximumFlightRange = maximumFlightRange;
+    this.cruiseSpeed = cruiseSpeed;
+    this.fuelConsumption = fuelConsumption;
+    this.manufacturer = manufacturer;
+    }
+}
+
+const R44 = new Helicopter('Helicopter', 'Petrol', 3, 1992, 1, '1089kg', '680km', '209km/h', '27kg/h', 'Robinson Helicopter')
+console.log(R44)
